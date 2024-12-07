@@ -1,6 +1,5 @@
 # Personal-Portfolio---Web-Page
 
-Personal Portfolio
 This is a simple, responsive personal portfolio website built using HTML, CSS, and JavaScript. The project showcases my skills, projects, and experiences, providing an interactive way to connect with me.
 
 Features:
