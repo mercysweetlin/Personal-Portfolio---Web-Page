@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/0c2ba579ab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!----------Header---------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Graphic Designer / Frontend Developer</p>
+                <h1>Hi, I'm <span>Mercy Sweetlin</span><br>from India</h1>
+                <h1></h1>
+            </div>
+        </div>
+    </div>
+
+    <!----------About---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/small-photo.JPG" alt="Phone background">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="about-text">
+                        Driven and detail-oriented software engineering student eager to leverage my skills in software development, problem-solving, and technical analysis as a Software Engineer. With a strong foundation in front-end development, I bring experience in creating intuitive, user-friendly interfaces and ensuring seamless user experiences. Passionate about contributing to innovative projects focused on designing, developing, and testing robust, scalable solutions. Seeking an opportunity to grow within a dynamic team environment, refine my technical expertise, and deliver impactful results.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C++<br>Java<br>Python</li>
+                            <li><span>Web development</span><br>Frontend Web Development</li>
+                            <li><span>Others</span><br>Leadership<br>Time Management<br>Collaboration and Mentorship adaption</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>B.Tech in Information Technology<br>CGPA: 8.07</li>
+                            <li><span>2020 - 2022</span><br>High School Diploma<br>Percentage: 92.4</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - August 2024</span><br>Graphic Designer at 300dpi</li>
+                            <li><span>2023 - July 2024</span><br>Core Team Member in Association of Computing Engineers,SASTRA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------Services---------->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Graphic Design</h2>
+                    <p>Graphic design is the art and practice of visually communicating ideas through the use of typography, imagery, color, and layout. It combines creativity and technical skills to create engaging designs for print, digital media, branding, and more.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Front-end web development focuses on building the user interface and experience of websites using technologies like HTML, CSS, and JavaScript. It involves designing responsive, interactive, and visually appealing web pages that ensure seamless functionality across devices.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------Portfolio---------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/Dramathon.png">
+                    <div class="layer">
+                        <h3>Poster Design</h3>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/website.png">
+                    <div class="layer">
+                        <h3>Website Design</h3>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="button">See more</a>
+        </div>
+    </div>
+
+    <!----------Contact---------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>sweetlin0476@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7010993074</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mercysweetlin/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/mercysweetlin"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Images/Resume.pdf" download class="button btn">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="button btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Mercy <i class="fa-solid fa-heart"></i> </p>
+        </div>
+    </div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+  
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzbYos4_c6gJcX-h1jFdf2iC-APqIqewBPbowZxVgnlnPL0SQspyyQGK3vjT9DG3A6-vA/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
